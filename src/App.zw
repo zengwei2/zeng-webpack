@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>
+    <h1 @click="handleClick">
       {{name}}
     </h1>
   </div>
@@ -10,6 +10,11 @@ export default {
   data: function() {
     return {
       name: 'Hello World!',
+    }
+  },
+  methods: {
+    handleClick() {
+      alert(1111)
     }
   },
 };
