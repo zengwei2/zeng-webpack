@@ -1,21 +1,21 @@
 <template>
   <div>
     <h1 @click="handleClick">
-      {{name}}
+      {{ name }}
     </h1>
   </div>
 </template>
 <script>
 export default {
-  data: function() {
+  data() {
     return {
       name: 'Hello World!',
-    }
+    };
   },
   methods: {
     handleClick() {
-      alert(1111)
-    }
+      alert(1111);
+    },
   },
 };
 </script>
